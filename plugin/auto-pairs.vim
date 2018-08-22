@@ -393,6 +393,12 @@ function! AutoPairsReturn()
     if g:AutoPairsCenterLine && winline() * 3 >= winheight(0) * 2
       " Recenter before adding new line to avoid replacing line content
       let cmd = "zz"
+    else
+      if line('.') == line('w0')
+        let cmd = "\<C-Y>"
+      elseif line('.') == line('w$')
+        let cmd = "\<C-E>"
+      end
     end
 
     " If equalprg has been set, then avoid call =
