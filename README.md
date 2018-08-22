@@ -8,7 +8,7 @@ copy plugin/auto-pairs.vim to ~/.vim/plugin
 
 or if you are using `pathogen`:
 
-```git clone git://github.com/jiangmiao/auto-pairs.git ~/.vim/bundle/auto-pairs```
+```git clone git://github.com/leventeliu/auto-pairs.git ~/.vim/bundle/auto-pairs```
 
 Features
 --------
